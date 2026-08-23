@@ -1,0 +1,569 @@
+:root {
+    --druim-orange: #d45a08;
+    --druim-green: #9acb72;
+    --druim-brown: #5a3b20;
+
+    --druim-bg: #0d0d0d;
+    --druim-panel: #11100f;
+    --druim-border: #2f2b26;
+
+    --druim-cream: #f3efe6;
+    --druim-muted: #a79f93;
+
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: var(--druim-cream);
+    background: var(--druim-bg);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(212, 90, 8, 0.08),
+            transparent 34rem
+        ),
+        radial-gradient(
+            circle at 18% 8%,
+            rgba(154, 203, 114, 0.05),
+            transparent 28rem
+        ),
+        var(--druim-bg);
+    color: var(--druim-cream);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-shell {
+    min-height: 100vh;
+}
+
+.site-header {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    min-height: 86px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #2c2925;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.brand-logo {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.site-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.site-nav a {
+    color: var(--druim-muted);
+    font-size: 0.95rem;
+    transition: color 160ms ease;
+}
+
+.site-nav a:hover {
+    color: var(--druim-green);
+}
+
+.hero {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 110px 0 90px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 72px;
+    align-items: center;
+}
+
+.eyebrow {
+    margin: 0 0 18px;
+    color: var(--druim-orange);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(4.5rem, 10vw, 8rem);
+    line-height: 0.86;
+    letter-spacing: -0.07em;
+}
+
+.hero-lead {
+    max-width: 680px;
+    margin: 34px 0 0;
+
+    color: var(--druim-muted);
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 38px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 0 20px;
+
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+
+.button-primary {
+    background: var(--druim-orange);
+    color: #fff;
+}
+
+.button-primary:hover {
+    background: var(--druim-brown);
+}
+
+.button-secondary {
+    border-color: var(--druim-border);
+    color: var(--druim-cream);
+}
+
+.button-secondary:hover {
+    border-color: var(--druim-green);
+    color: var(--druim-green);
+}
+
+.code-window {
+    overflow: hidden;
+    border: 1px solid var(--druim-border);
+    background: var(--druim-panel);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.code-header {
+    padding: 14px 18px;
+    border-bottom: 1px solid #2f2b26;
+
+    color: #91887c;
+    font-family:
+        "Cascadia Code",
+        "JetBrains Mono",
+        Consolas,
+        monospace;
+    font-size: 0.82rem;
+}
+
+pre {
+    margin: 0;
+    padding: 28px;
+    overflow-x: auto;
+}
+
+code {
+    color: #e9dfd2;
+
+    font-family:
+        "Cascadia Code",
+        "JetBrains Mono",
+        Consolas,
+        monospace;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+
+    font-variant-ligatures: none;
+    font-feature-settings:
+        "liga" 0,
+        "calt" 0;
+}
+
+.principles {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 34px 0 100px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #2c2925;
+}
+
+.principles > div {
+    padding: 30px 28px 0 0;
+}
+
+.principles span {
+    color: #786f65;
+    font-family:
+        "Cascadia Code",
+        Consolas,
+        monospace;
+    font-size: 0.78rem;
+}
+
+.principles h2 {
+    margin: 18px 0 12px;
+    font-size: 1.05rem;
+}
+
+.principles p {
+    margin: 0;
+    color: var(--druim-muted);
+    line-height: 1.65;
+}
+
+.druim-code {
+    color: var(--druim-cream);
+}
+
+.syntax-structure {
+    color: var(--druim-orange);
+}
+
+.syntax-keyword {
+    color: var(--druim-green);
+    font-weight: 700;
+}
+
+.syntax-function {
+    color: #d8c7a8;
+}
+
+.syntax-binding {
+    color: #b8d99c;
+}
+
+.syntax-operator {
+    color: #d9823a;
+}
+
+.syntax-text {
+    color: #d7b48a;
+}
+
+.language-glance {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 110px 0 120px;
+    border-top: 1px solid var(--druim-border);
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 48px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+}
+
+.section-heading > p:last-child {
+    margin: 24px 0 0;
+    color: var(--druim-muted);
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.glance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.glance-card {
+    min-width: 0;
+    border: 1px solid var(--druim-border);
+    background: var(--druim-panel);
+}
+
+.glance-card-header {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--druim-border);
+}
+
+.glance-card-header span {
+    color: var(--druim-muted);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.glance-card pre {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.syntax-number {
+    color: var(--druim-green);
+}
+
+.tooling-section {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 110px 0;
+    border-top: 1px solid var(--druim-border);
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+    gap: 80px;
+    align-items: center;
+}
+
+.tooling-copy h2 {
+    max-width: 620px;
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+.tooling-copy > p:last-of-type {
+    max-width: 620px;
+    margin: 26px 0 0;
+    color: var(--druim-muted);
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+.tooling-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.tooling-terminal {
+    overflow: hidden;
+    border: 1px solid var(--druim-border);
+    background: #090909;
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0 18px;
+    border-bottom: 1px solid var(--druim-border);
+    background: #121110;
+}
+
+.terminal-title {
+    color: var(--druim-muted);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.tooling-terminal pre {
+    margin: 0;
+    padding: 30px;
+}
+
+.tooling-terminal code {
+    font-variant-ligatures: none;
+    font-feature-settings:
+        "liga" 0,
+        "calt" 0;
+}
+
+.terminal-prompt {
+    color: var(--druim-orange);
+    font-weight: 700;
+}
+
+.terminal-output {
+    color: var(--druim-green);
+}
+
+.install-section {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 110px 0 130px;
+    border-top: 1px solid var(--druim-border);
+}
+
+.install-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.install-card {
+    padding: 28px;
+    border: 1px solid var(--druim-border);
+    background: var(--druim-panel);
+}
+
+.install-step {
+    display: block;
+    margin-bottom: 36px;
+    color: var(--druim-orange);
+    font-family:
+        "Cascadia Code",
+        "JetBrains Mono",
+        Consolas,
+        monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.install-card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.install-card p {
+    min-height: 78px;
+    margin: 16px 0 24px;
+    color: var(--druim-muted);
+    line-height: 1.65;
+}
+
+.install-card p code {
+    color: var(--druim-green);
+}
+
+.install-command {
+    overflow-x: auto;
+    padding: 14px 16px;
+    border: 1px solid var(--druim-border);
+    background: #090909;
+}
+
+.install-command code {
+    white-space: nowrap;
+    color: var(--druim-cream);
+
+    font-variant-ligatures: none;
+    font-feature-settings:
+        "liga" 0,
+        "calt" 0;
+}
+
+@media (max-width: 900px) {
+    .site-nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 72px;
+    }
+
+    .principles {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .glance-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tooling-section {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .install-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .install-card p {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header,
+    .hero,
+    .principles {
+        width: min(100% - 30px, 1180px);
+    }
+
+    .hero {
+        padding-top: 52px;
+        gap: 44px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .principles {
+        grid-template-columns: 1fr;
+    }
+
+    .language-glance {
+        width: min(100% - 30px, 1180px);
+        padding: 80px 0 90px;
+    }
+
+    .glance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tooling-section,
+    .install-section {
+        width: min(100% - 30px, 1180px);
+        padding: 80px 0 90px;
+    }
+
+    .tooling-terminal pre {
+        padding: 22px;
+    }
+}
