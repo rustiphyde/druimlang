@@ -495,12 +495,33 @@ function App() {
                             </span>
 
                             <h3>
-                                Install Druim
+                                Download for Windows
                             </h3>
 
                             <p>
-                                Run the installer in PowerShell. Druim is installed
-                                to your user profile and added to your PATH.
+                                Download the Druim installer and follow the guided setup.
+                            </p>
+
+                            <a
+                                className="button button-primary"
+                                href="/downloads/windows/DruimSetup.exe"
+                                download
+                            >
+                                Download DruimSetup.exe
+                            </a>
+                        </article>
+
+                        <article className="install-card">
+                            <span className="install-step">
+                                02
+                            </span>
+
+                            <h3>
+                                Install with PowerShell
+                            </h3>
+
+                            <p>
+                                Prefer the command line? Install Druim directly from PowerShell.
                             </p>
 
                             <div className="install-command">
@@ -512,42 +533,20 @@ function App() {
 
                         <article className="install-card">
                             <span className="install-step">
-                                02
+                                03
                             </span>
 
                             <h3>
-                                Verify the install
+                                Verify Druim
                             </h3>
 
                             <p>
-                                Confirm that the Druim executable is available from
-                                your terminal.
+                                Confirm that Druim is available from your terminal.
                             </p>
 
                             <div className="install-command">
                                 <code>
                                     druim --version
-                                </code>
-                            </div>
-                        </article>
-
-                        <article className="install-card">
-                            <span className="install-step">
-                                03
-                            </span>
-
-                            <h3>
-                                Run Druim
-                            </h3>
-
-                            <p>
-                                Execute any complete Druim source file using the
-                                <code>.drm</code> extension.
-                            </p>
-
-                            <div className="install-command">
-                                <code>
-                                    druim hello.drm
                                 </code>
                             </div>
                         </article>
