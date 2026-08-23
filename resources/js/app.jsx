@@ -475,38 +475,37 @@ function App() {
                 >
                     <div className="section-heading">
                         <p className="eyebrow">
-                            Build & Run
+                            Install Druim
                         </p>
 
                         <h2>
-                            Run Druim locally.
+                            Install Druim on Windows.
                         </h2>
 
                         <p>
-                            Druim source files use the
-                            <code>.drm</code> extension and execute
-                            through the <code>druim</code> command.
+                            Install the Druim command-line tool directly from
+                            druimlang.com.
                         </p>
                     </div>
 
-                   <div className="install-grid">
+                    <div className="install-grid">
                         <article className="install-card">
                             <span className="install-step">
                                 01
                             </span>
 
                             <h3>
-                                Get the source
+                                Install Druim
                             </h3>
 
                             <p>
-                                Clone the Druim repository to your
-                                local machine.
+                                Run the installer in PowerShell. Druim is installed
+                                to your user profile and added to your PATH.
                             </p>
 
                             <div className="install-command">
                                 <code>
-                                    git clone https://github.com/rustiphyde/druim-lang.git
+                                    irm https://druimlang.com/install.ps1 | iex
                                 </code>
                             </div>
                         </article>
@@ -517,17 +516,17 @@ function App() {
                             </span>
 
                             <h3>
-                                Build Druim
+                                Verify the install
                             </h3>
 
                             <p>
-                                Build the Druim compiler and command-line
-                                executable from the project source.
+                                Confirm that the Druim executable is available from
+                                your terminal.
                             </p>
 
                             <div className="install-command">
                                 <code>
-                                    cargo build --release
+                                    druim --version
                                 </code>
                             </div>
                         </article>
@@ -542,8 +541,8 @@ function App() {
                             </h3>
 
                             <p>
-                                Execute a complete Druim source file
-                                through the compiled command-line tool.
+                                Execute any complete Druim source file using the
+                                <code>.drm</code> extension.
                             </p>
 
                             <div className="install-command">
