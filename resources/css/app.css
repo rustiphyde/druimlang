@@ -494,6 +494,13 @@ code {
         "calt" 0;
 }
 
+.druim-divider {
+    display: block;
+    width: min(100%, 434px);
+    height: auto;
+    margin: 24px auto;
+}
+
 @media (max-width: 900px) {
     .site-nav {
         display: none;

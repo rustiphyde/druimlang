@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import '../css/app.css';
+import DruimDivider from "./components/DruimDivider";
 
 function DruimCodeSample() {
     return (
@@ -124,6 +125,8 @@ function App() {
                     </div>
                 </section>
 
+                <DruimDivider />
+
                 <section
                     className="principles"
                     id="language"
@@ -164,6 +167,8 @@ function App() {
                         </p>
                     </div>
                 </section>
+
+                <DruimDivider />
 
                 <section className="language-glance">
                     <div className="section-heading">
@@ -408,6 +413,8 @@ function App() {
                     </div>
                 </section>
 
+                <DruimDivider />
+
                 <section
                     className="tooling-section"
                     id="tooling"
@@ -468,6 +475,8 @@ function App() {
                         </pre>
                     </div>
                 </section>
+
+                <DruimDivider />
 
                 <section
                     className="install-section"
@@ -552,6 +561,8 @@ function App() {
                         </article>
                     </div>
                 </section>
+
+                <DruimDivider />
             </main>
         </div>
     );
